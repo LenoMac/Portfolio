@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://kit.fontawesome.com/923475bd3a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,200&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./img/Logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Web-Site Private</title>
+</head>
+
+<body class="flex flex-col h-max w-full select-none bg-gray-200 max-sm:w-[505px]">
+  <div class="h-[100vh] w-[70%] absolute left-0 top-0"
+    style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.461), rgba(0, 0, 0, 0));"></div>
+
+  <div class="flex h-[100vh] flex-col gap-[300px] sm:h-[756px]"
+    style="background-image: url(./img/pexels-geordie-mcleod-4735010.jpg); background-size: cover;">
+    <div class="w-full">
+      <div class="flex flex-col w-full relative w-full">
+
+        <div class="fixed top-0 left-0 right-0 z-10 w-100% h-22" style="background-color: rgba(255, 255, 255, 0); backdrop-filter: blur(3px); @media (max-width: 767) {
+            background-color: rgba(255, 255, 255, 1);
+          }">
+          <div class="flex py-6 px-6 w-[90%] m-auto justify-between">
+            <a class="self-center" href="./Portfolio.html">
+              <img class="h-[60px] cursor-pointer" src="./img/Logo.png" alt="" />
+            </a>
+            <div id="menu"
+              class=" max-md:bg-red-600 max-md:absolute max-md:left-0 max-md:top-[-555px] max-md:w-full max-md:h-[550px] max-md:self-center transition ease-in-out delay-150">
+              <ul
+                class="flex self-center max-md:flex-col max-md:absolute max-md:top-[34%] max-md:left-[34%] max-md:text-[40px]">
+                <li class="text-[#fff] cursor-pointer font-normal ml-6 max-md:flex max-md:self-center">
+                  <a href="Portfolio.html" class="text-[#F28E2C] transition-colors">Home</a>
+                </li>
+                <li class="text-[#fff] cursor-pointer font-normal ml-6 max-md:flex max-md:self-center">
+                  <a href="#about" id="links" class="hover:text-[#F28E2C] transition-colors">About Me</a>
+                </li>
+                <li class="text-[#fff] cursor-pointer font-normal ml-6 max-md:flex max-md:self-center">
+                  <a href="#blog" id="links" class="hover:text-[#F28E2C] transition-colors">Blog</a>
+                </li>
+                <li class="text-[#fff] cursor-pointer font-normal ml-6 max-md:flex max-md:self-center">
+                  <a href="#footer" id="links" class="hover:text-[#F28E2C] transition-colors">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <span id="burger" class="hidden max-md:block z-10">
+              <i id="open" class="fa-solid fa-bars text-white text-[40px]"></i>
+              <i id="close" class="fa-solid fa-xmark text-white text-[40px] hidden"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cup" class="text-white relative z-2 max-sm:w-full">
+      <div class="flex flex-col w-[400px] ml-40 gap-6 text-white lg:gap-4 lg:mb-[30px] max-sm:ml-10 max-sm:gap-2">
+        <p class="text-[45px] font-normal leading-[3rem] max-sm:text-[45px]">
+          A new way to <br />
+          use computers
+        </p>
+        <p class="text-[20px] max-sm:text-[25px] max-sm:self-center">
+          We're building a machine learning model that can interact with
+          everything on your computer.
+        </p>
+        <input
+          class="select-none bg-orange-500 text-white w-max py-2 px-6 rounded-[20px] cursor-pointer hover:bg-[#F28E2C] transition-colors max-sm:w-full max-sm:text-2xl"
+          type="button" value="Join the waitlist" />
+      </div>
+    </div>
+  </div>
+  <!-- ABOUT ME -->
+  <div id="about" class="w-full py-10 mt-[150px]">
+    <div class="w-full h-max ">
+      <div class="w-[80%] m-auto">
+
+        <div class="flex gap-[80px] max-sm:flex-col">
+          <div class="w-[250px] max-sm:self-center">
+            <img src="./img/profile.webp" alt="Error" class="cover">
+          </div>
+          <div class="flex flex-col gap-4">
+            <h2 class="text-[50px] font-medium max-sm:self-center">Hi there!</h2>
+            <p class="text-gray-500 text-xl max-sm:self-center">Привет, меня зовут Абдулхафиз, и я Junior Frontend разработчик. <br> Я
+              увлечен созданием красивых и функциональных <br> веб-сайтов, используя навыки HTML, CSS и JavaScript.</p>
+          </div>
+        </div>
+
+        <div class="w-full flex my-[100px] justify-between max-sm:flex-col max-sm:gap-6">
+          <div class="flex flex-col gap-4 w-[60%] max-sm:self-center max-sm:w-full">
+            <h2 class="text-[30px] font-medium max-sm:self-center">My Career So Far</h2>
+            <p class="text-gray-500 text-xl">Я получил образование в области веб-разработки и занимаюсь ей уже
+              1 год. За это время я освоил различные технологии и инструменты, такие как React, Tailwind и Sass, и могу
+              применять их для создания интерактивных и динамических интерфейсов. Кроме того, я также заинтересован в 3D
+              моделировании и недавно начал изучать его. Я освоил основы программирования 3D-моделей в Blender и Spline,
+              и мне нравится создавать 3D-модели и анимации.</p>
+          </div>
+
+          <div class="flex flex-col gap-2 self-center ">
+            <div class="flex gap-2 cursor-pointe select-none max-sm:self-center">
+              <span class="h-max w-max py-[3px] px-[5px] font-medium rounded-[5px] border-2 max-sm:text-[20px] max-sm:border-px border-gray-300">UI DESIGN</span>
+              <span class="h-max w-max py-[3px] px-[5px] font-medium rounded-[5px] border-2 max-sm:text-[20px] max-sm:border-2 border-gray-300">UX DESIGN</span>
+              <span class="h-max w-max py-[3px] px-[5px] font-medium rounded-[5px] border-2 max-sm:text-[20px] max-sm:border-2 border-gray-300">PROTOTYPING</span>
+            </div>
+            <div class="flex gap-2 cursor-pointer select-none max-sm:self-center">
+              <span class="h-max w-max py-[3px] px-[5px] font-medium rounded-[5px] border-2 max-sm:text-[20px] max-sm:border-2 border-gray-300">BRANDING</span>
+              <span class="h-max w-max py-[3px] px-[5px] font-medium rounded-[5px] border-2 max-sm:text-[20px] max-sm:border-2 border-gray-300">HTML/CSS</span>
+              <span class="h-max w-max py-[3px] px-[5px] font-medium rounded-[5px] border-2 max-sm:text-[20px] max-sm:border-2 border-gray-300">WIREFRAMING</span>
+            </div>
+            <div class="flex gap-2 cursor-pointer select-none max-sm:self-center">
+              <span class="h-max w-max py-[3px] px-[5px] font-medium rounded-[5px] border-2  max-sm:text-[20px] max-sm:border-2 border-gray-300">USER RESEARH</span>
+              <span class="h-max w-max py-[3px] px-[5px] font-medium rounded-[5px] border-2 max-sm:text-[20px] max-sm:border-2 border-gray-300">USER INTERVIEWS</span>
+            </div>
+            <div class="flex gap-2 cursor-pointer select-none max-sm:self-center">
+              <span class="h-max w-max py-[3px] px-[5px] font-medium rounded-[5px] border-2 max-sm:text-[20px] max-sm:border-2 border-gray-300">LEADERSHIP</span>
+              <span class="h-max w-max py-[3px] px-[5px] font-medium rounded-[5px] border-2 max-sm:text-[20px] max-sm:border-2 border-gray-300">SKETCH</span>
+              <span class="h-max w-max py-[3px] px-[5px] font-medium rounded-[5px] border-2 max-sm:text-[20px] max-sm:border-2 border-gray-300">ADOBE SUITE</span>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- TO UP -->
+  <div class="sticky left-4 bottom-[20px] bg-orange-500 p-4 w-max h-max rounded-full translate-y-[-10px]">
+    <a href="#cup" id="links">
+      Go Up
+      <span>
+        <i class="fa-solid fa-up absolute z-10 text-2xl" style="color: #ffffff;"></i>
+      </span>
+    </a>
+  </div>
+  <!-- TO UP -->
+
+  <!-- FOOTER -->
+  <div id="footer" class="w-full h-max bg-[#343334] text-white select-none">
+    <div class="flex flex-col w-[80%] m-auto">
+      <div class="flex justify-between w-[100%] m-auto py-[50px]">
+        <div class="flex flex-col self-center gap-4 font-normal max-sm:hidden">
+          <p>USEFUL LINKS</p>
+          <ul class="flex flex-col self-center text-sm gap-2">
+            <li class="self-center"><a href="#" class="hover:text-[#F28E2C] transition-colors">About</a></li>
+            <li class="self-center"><a href="#" class="hover:text-[#F28E2C] transition-colors">Services</a></li>
+            <li class="self-center"><a href="#" class="hover:text-[#F28E2C] transition-colors">Contact</a></li>
+            <li class="self-center"><a href="#" class="hover:text-[#F28E2C] transition-colors">Shop</a></li>
+            <li class="self-center"><a href="#" class="hover:text-[#F28E2C] transition-colors">Blog</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col self-center gap-8">
+          <p class="self-center">NEWLETTER</p>
+          <form method="get" class="flex flex-col self-center gap-8">
+            <input
+              class="self-center px-[10px] border-none outline-none m-auto w-[350px] rounded-md h-[35px] placeholder:text-sm placeholder:px-[90px] text-[#000] max-sm:w-[150px] max-sm:placeholder:px-[10px]"
+              type="search" placeholder="Your Email Address" />
+            <button
+              class="w-max px-6 py-2 border-white border-[2px] text-sm rounded-[20px] self-center hover:bg-[#fff] hover:text-[#343334] transition-colors">SUBSCRIBE
+              NOW</button>
+          </form>
+
+        </div>
+        <div class="flex flex-col gap-4">
+          <p>CONTACT</p>
+          <p>123, XYZ Road, BSK 3 <br> Bishkek, Kyrgyzstan</p>
+          <div class="flex justify-start gap-4 text-2xl">
+            <a target="blank" href="https://wa.me/+996779079279"><span><i
+                  class="fa-brands fa-whatsapp hover:text-[#31d84f] transition-colors"></i></span></a>
+            <a target="blank" href="https://twitter.com/Hatizbey?t=R3nLHoNpWv-Y48oM0FeWmg&s=09"><span><i
+                  class="fa-brands fa-twitter hover:text-[#1d9bf0] transition-colors"></i></span></a>
+            <a target="blank" href="https://instagram.com/hafizbey_official?igshid=ZDdkNTZiNTM="><span><i
+                  class="fa-brands fa-instagram hover:text-[#ff008c] transition-colors"></i></span></a>
+            <a target="blank" href="#"><span><i class="fa-brands fa-tiktok transition-colors"></i></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="self-center ml-[-25px] p-4">
+        <span class="">
+          <p class="text-[15px]"><i class="fa-regular fa-copyright "></i> Copyright 2023 - <span
+              class="cursor-pointer text-red-600">All rights reserved</span></p>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <script src="script.js"></script>
+</body>
+
+</html>
